@@ -1,1 +1,1 @@
-from parse.csv import from_csv
+from parse.csvparse import from_csv
