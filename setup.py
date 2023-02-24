@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='simple-quizzer',
+    name='simplequiz',
     version='0.1',
     description='GUI quizzer',
     author='mike-fmh',

@@ -1,5 +1,5 @@
 [project]
-name = "simple-quizzer"
+name = "simplequiz"
 version = "0.0.1"
 authors = [
   { name="Michael MH", email="mikemh@uri.edu" },
