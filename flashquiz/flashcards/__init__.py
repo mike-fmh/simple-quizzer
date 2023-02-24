@@ -1,1 +1,2 @@
-from flashquiz.flashcards import card, deck
+from .deck import Deck
+from .card import Card

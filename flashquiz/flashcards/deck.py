@@ -1,4 +1,4 @@
-from flashcards.card import Card
+from .card import Card
 
 
 class Deck:
