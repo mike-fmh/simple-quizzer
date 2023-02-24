@@ -1,6 +1,6 @@
 [project]
 name = "flashquiz"
-version = "0.0rc1"
+version = "{python('import setuptools_scm; print(setuptools_scm.get_version())')}"
 authors = [
   { name="Michael MH", email="mikemh@uri.edu" },
 ]
