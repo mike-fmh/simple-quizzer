@@ -1,2 +1,1 @@
-from . import card, deck
-
+from flashquiz.flashcards import card, deck

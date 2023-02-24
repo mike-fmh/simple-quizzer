@@ -1,1 +1,1 @@
-from . import quizzer
+from flashquiz import quizzer

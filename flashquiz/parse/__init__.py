@@ -1,1 +1,1 @@
-from . import csvparse
+from flashquiz.parse import csvparse
