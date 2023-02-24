@@ -1,10 +1,10 @@
 [project]
-name = "simplequiz"
+name = "flashquiz"
 version = "0.0.1"
 authors = [
   { name="Michael MH", email="mikemh@uri.edu" },
 ]
-description = "A small example package"
+description = "Quiz yourself on your flashcards"
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
@@ -14,4 +14,4 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/mike-fmh/simple-quizzer"
+"Homepage" = "https://github.com/mike-fmh/flashquiz"
