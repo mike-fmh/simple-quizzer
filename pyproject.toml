@@ -1,6 +1,6 @@
 [project]
 name = "flashquiz"
-version = "0.0rc2"
+version = "0.0b1"
 authors = [
   { name="Michael MH", email="mikemh@uri.edu" },
 ]
@@ -14,4 +14,5 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/mike-fmh/flashquiz"
+"Source" = "https://github.com/mike-fmh/flashquiz"
+"Homepage" = "https://mike-fmh.github.io/flashquiz/"
