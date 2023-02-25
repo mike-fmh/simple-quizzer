@@ -28,6 +28,10 @@ jobs:
     # Build book
     - name: Build the book
       run: |
+        pwd
+        cd docs/
+        pwd
+        ls
         jupyter-book build . --builder pdfhtml
         mv _build/pdf/book.pdf _build/html/flashquiz.pdf
         jupyter-book build .
