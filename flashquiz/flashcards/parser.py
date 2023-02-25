@@ -1,4 +1,4 @@
-from flashquiz.flashcards.deck import Deck
+from .deck import Deck
 
 
 # For parsing csv documents into question | answer format
