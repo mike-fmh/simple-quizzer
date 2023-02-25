@@ -1,4 +1,4 @@
-from .parse.csvparse import from_csv
+from .flashcards.parser import from_csv
 
 
 def main():
