@@ -1,7 +1,7 @@
 import pygame
 from .flashcards.parser import from_csv
 from .args import handle_args
-from .gui import Screen
+from .gui.constants import Screen
 
 
 def main():
