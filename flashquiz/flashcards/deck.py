@@ -6,6 +6,8 @@ class Deck:
         self.cards = []
 
     def add_card(self, question: str, answer: str):
+        """:param question the question for the Card to add to the deck
+            :param answer the Card's answer"""
         self.cards.append(Card(question, answer))
         return self
 
@@ -15,6 +17,7 @@ class Deck:
         return self
 
     def add_card_from_obj(self, add: Card):
+        """:param add the Card object to add to this deck"""
         self.cards.append(add)
         return self
 
