@@ -22,6 +22,6 @@ def handle_args():
                       type=str,
                       metavar="WIN_TITLE",
                       help="Window title",
-                      default="FlashQuiz")
+                      default=Screen.title)
 
     return args.parse_args()
