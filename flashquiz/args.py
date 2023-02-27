@@ -7,7 +7,8 @@ def handle_args():
     args = ArgumentParser()
     args.add_argument("--file",
                       metavar="INPUT_FILE",
-                      help="Path to the file containing questions and answers for your flashcards")
+                      help="Path to the file containing questions and answers for your flashcards",
+                      default="default.csv")
     args.add_argument("--h",
                       type=int,
                       metavar="WIN_HEIGHT",
