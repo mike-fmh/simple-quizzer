@@ -5,10 +5,25 @@ from .gui.constants import Screen
 def handle_args():
     """Create all arguments, and return the parsed given arguments"""
     args = ArgumentParser()
-    args.add_argument("--file",
+    args.add_argument("--fps",
+                      metavar="FPS",
+                      type=int,
+                      help="Frames per second to run at",
+                      default=60
+                      ),
+
+    args.add_argument("--cards_file",
                       metavar="INPUT_FILE",
                       help="Path to the file containing questions and answers for your flashcards",
                       default="default.csv")
+    args.add_argument("--cards_front",
+                      metavar="IMG_PATH",
+                      help="Path to the .jpg to use for all flashcard front backgrounds (500x250 pixels)",
+                      default="assets/card_front.jpg")
+    args.add_argument("--cards_back",
+                      metavar="IMG_PATH",
+                      help="Path to the .jpg to use for all flashcard back backgrounds (500x250 pixels)",
+                      default="assets/card_back.jpg")
     args.add_argument("--h",
                       type=int,
                       metavar="WIN_HEIGHT",
