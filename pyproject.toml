@@ -1,10 +1,10 @@
 [project]
 name = "flashquiz"
-version = "0.0b1"
+version = "0.0a2"
 authors = [
   { name="Michael MH", email="mikemh@uri.edu" },
 ]
-description = "[TEST VERSION] Quiz yourself on your flashcards"
+description = "Practice your flashcards using python"
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
