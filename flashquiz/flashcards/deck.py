@@ -38,24 +38,29 @@ class Deck:
         return temp_group
 
     def move_to_back(self, mv_card: Card):
+        self.unflip()
         self.cards.remove(mv_card)
-        mv_card.flipped = False
         self.cards.add(mv_card)
 
     def move_first_to_back(self):
         return self.move_to_back(self.cards.sprites()[0])
 
     def move_to_front(self, mv_card: Card):
+        self.unflip()
         grouplist = []
         for c in self.cards:
             grouplist.append(c)
         grouplist.remove(mv_card)
-        mv_card.flipped = False
         grouplist.insert(0, mv_card)
         tempgroup = SpriteGroup()
         for c in grouplist:
             tempgroup.add(c)
         self.cards = tempgroup
+
+    def unflip(self):
+        for card in self.cards:
+            if card.flipped:
+                card.flip()
 
     def move_last_to_front(self):
         return self.move_to_front(self.cards.sprites()[-1])

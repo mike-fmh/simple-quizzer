@@ -48,6 +48,7 @@ class Card(Sprite):
 
     def flip(self):
         self.flipped = not self.flipped
+        self.refresh_img()
 
     def update(self) -> None:
         """Override pygame's default sprite update()"""
