@@ -7,14 +7,16 @@ def main():
     args = handle_args()
     game = GUI(args).init_screen()
     deck = from_csv(args.cards_file)
-    deck.set_images(args.cards_front, args.cards_back)
+    deck.init_cards(args.cards_front, args.cards_back, args.font)
     run = True
     while run:
         game.screen.fill((0, 0, 0))
-        deck.update_sprites()
-        deck.cards.draw(game.screen)
-        run = game.handle_events()
-        game.refresh()
+
+        card_in_focus = deck.get_first_card()
+        card_in_focus.draw(game.screen)
+        game.render(card_in_focus)
+
+        run, deck = game.handle_events(deck)
 
     game.quit()
 
