@@ -9,10 +9,10 @@ def handle_args():
                       metavar="FPS",
                       type=int,
                       help="Frames per second to run at",
-                      default=60
+                      default=30
                       ),
 
-    args.add_argument("--cards_file",
+    args.add_argument("--file",
                       metavar="INPUT_FILE",
                       help="Path to the file containing questions and answers for your flashcards",
                       default="default.csv")

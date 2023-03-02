@@ -6,7 +6,7 @@ from flashquiz.gui import GUI
 def main():
     args = handle_args()
     game = GUI(args).init_screen()
-    deck = from_csv(args.cards_file)
+    deck = from_csv(args.file)
     deck.init_cards(args.cards_front, args.cards_back, args.font)
     run = True
     while run:
