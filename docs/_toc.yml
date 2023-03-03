@@ -4,6 +4,6 @@
 format: jb-book
 root: index
 chapters:
-- file: releases
 - file: github
+- file: releases
 - file: doc
