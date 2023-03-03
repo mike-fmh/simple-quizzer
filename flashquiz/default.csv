@@ -1,3 +1,4 @@
-"1st","world"
-"2ndwhat is the -m stand for in 'git commit'?","message"
-"3rd","fakcdjha"
+What is a 'branch' of a git repository?,Each branch is a different "version" of the same repository
+What is a 'fork' of a git repository?,A copy of a repository that can be created by any user
+What does the -m argument do in the 'git commit' command?,Adds commit message
+When using the 'git checkout' command what does the -b argument do?,It creates a new branch
