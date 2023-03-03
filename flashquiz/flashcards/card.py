@@ -35,7 +35,7 @@ class Card(Sprite):
             txt = self.answer
         else:
             txt = self.question
-        self.text_rect.center = (self.x + 250, self.y + 100)
+        self.text_rect.center = (self.x + 250, self.y + 115)
         self.text_sprite = self.font.render(txt, True, (255, 255, 255))
         return self.text_sprite, self.text_rect
 
