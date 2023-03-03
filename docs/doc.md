@@ -13,7 +13,7 @@ Quizzing yourself on flashcards is not supported yet as of v0.01, but it is plan
 
 Open the terminal and run
 
-> flashquiz [args]
+> flashquiz --arg ARG
 
 
 ## Args
