@@ -24,7 +24,7 @@ class GUI:
         for event in pygame.event.get():
             keys = pygame.key.get_pressed()
             if event.type == pygame.MOUSEBUTTONDOWN:
-                deck.cards.sprites()[0].flip()
+                deck.cards.sprites()[0].flip()  # first card of the deck is the only one in view
             if keys[pygame.K_RIGHT]:
                 deck.move_first_to_back()
             if keys[pygame.K_LEFT]:
@@ -37,8 +37,7 @@ class GUI:
         self.clock.tick(self.FPS)
         for card in group:
             card.update()
-            sprite, rect = card.render_text()
-            self.screen.blit(sprite, rect)
+            card.render_textwrap(self.screen)
         pygame.display.update()
 
     def render_card(self, card: Card):
