@@ -8,3 +8,4 @@
 - 0.03: 
    - add 10 default questions and answers
    - implement textwrap and dynamic text centering for flashcards
+   - add top-left text to keep track of current flashcard number
