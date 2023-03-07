@@ -16,6 +16,7 @@ class Card(Sprite):
         self.flipped = False
 
     def set_fields(self, question: str, answer: str):
+        """Set question & answer fields"""
         self.question, self.answer = question, answer
         return self
 
@@ -23,15 +24,19 @@ class Card(Sprite):
         self.x, self.y = x, y
 
     def set_imgs(self, front: str, back: str):
+        """Load the images initially
+        :param front image path for the self.flipped=False side
+        :param back image path for the self.flipped=True side"""
         self.front, self.back = front, back
         self.refresh_img()
 
     def load_text(self, font):
+        """Load the text font and text sprite (without rendering)"""
         self.font = SysFont(font, 30, italic=False, bold=False)
         self.text_sprite = self.font.render(self.question, True, (255, 255, 255))
         self.text_rect = self.text_sprite.get_rect()
 
-    def render_text(self, surface, x_offset=250, y_offset=115, ):
+    def render_text(self, surface, x_offset=250, y_offset=115):
         """Renders text without wrap"""
         if self.flipped:
             txt = self.answer
@@ -108,6 +113,7 @@ class Card(Sprite):
         return text
 
     def refresh_img(self):
+        """Load the image corresponding to what side self.flipped shows"""
         if self.flipped:
             self.image = load(self.back)
         else:
@@ -115,6 +121,7 @@ class Card(Sprite):
         self.rect = self.image.get_rect()
 
     def flip(self):
+        """Invert self.flipped and the card image"""
         self.flipped = not self.flipped
         self.refresh_img()
 
