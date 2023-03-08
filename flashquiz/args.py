@@ -21,7 +21,7 @@ def handle_args():
                       metavar="FONT_NAME",
                       type=str,
                       help="Name of the pygame-supported font to use",
-                      default="inkfree")
+                      default="arial")
     args.add_argument("--cards_front",
                       metavar="IMG_PATH",
                       help="Path to the .jpg to use for all flashcard front backgrounds (500x250 pixels)",
