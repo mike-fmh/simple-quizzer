@@ -11,8 +11,7 @@ def handle_args():
                       metavar="FPS",
                       type=int,
                       help="Frames per second to run at",
-                      default=30
-                      ),
+                      default=30),
     args.add_argument("--file",
                       metavar="INPUT_FILE",
                       help="Path to the file containing questions and answers for your flashcards",
@@ -21,7 +20,7 @@ def handle_args():
                       metavar="FONT_NAME",
                       type=str,
                       help="Name of the pygame-supported font to use",
-                      default="inkfree")
+                      default="arial")
     args.add_argument("--cards_front",
                       metavar="IMG_PATH",
                       help="Path to the .jpg to use for all flashcard front backgrounds (500x250 pixels)",
@@ -45,5 +44,4 @@ def handle_args():
                       metavar="WIN_TITLE",
                       help="Window title",
                       default=Screen.title)
-
     return args.parse_args()
