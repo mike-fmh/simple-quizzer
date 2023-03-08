@@ -11,8 +11,7 @@ def handle_args():
                       metavar="FPS",
                       type=int,
                       help="Frames per second to run at",
-                      default=30
-                      ),
+                      default=30),
     args.add_argument("--file",
                       metavar="INPUT_FILE",
                       help="Path to the file containing questions and answers for your flashcards",
@@ -45,5 +44,4 @@ def handle_args():
                       metavar="WIN_TITLE",
                       help="Window title",
                       default=Screen.title)
-
     return args.parse_args()
