@@ -39,7 +39,7 @@ class GUI:
         :param deck the deck of flashcards to use, manipulate, and return"""
         for event in pygame.event.get():
             keys = pygame.key.get_pressed()
-            if event.type == pygame.MOUSEBUTTONDOWN:
+            if event.type == pygame.MOUSEBUTTONDOWN or keys[pygame.K_UP] or keys[pygame.K_DOWN]:
                 deck.cards.sprites()[0].flip()  # first card of the deck is the only one in view
             if keys[pygame.K_RIGHT]:
                 deck.move_first_to_back()
