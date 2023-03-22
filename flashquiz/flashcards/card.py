@@ -55,8 +55,8 @@ class Card(Sprite):
 
     def render_textwrap(self, surface: Surface, color: (int, int, int) = None,
                         font: SysFont = None, padding_left: int = 40, rect: Rect = None, aa=True):
-        """Function adapted from https://www.pygame.org/wiki/TextWrap
-           Renders text while wrapping anything that goes over the given rect boundaries
+        """Renders text on a card while wrapping anything that goes over its rect boundaries
+           Function adapted from https://www.pygame.org/wiki/TextWrap
            :param surface which screen to draw text on
            :param color text color
            :param font text font
@@ -133,6 +133,6 @@ class Card(Sprite):
         self.refresh_img()
 
     def update(self) -> None:
-        """Override pygame's default sprite update()"""
+        """Override pygame's default sprite update() to set the card's rect (actual) position to the correct values"""
         self.rect.x, self.rect.y = self.x, self.y
 
