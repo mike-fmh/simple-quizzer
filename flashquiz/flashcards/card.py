@@ -6,9 +6,11 @@ from pygame import Rect, Surface
 
 
 class Card(Sprite):
-    def __init__(self):
+    def __init__(self, x: int = 110, y: int = 120):
+        """:param x starting x-position
+        :param y starting y-position"""
         super().__init__()
-        self.x, self.y = 110, 120
+        self.x, self.y = x, y
         self.font, self.text_sprite, self.text_rect = None, None, None
         self.question, self.answer = None, None
         self.rect, self.image = None, None
@@ -16,11 +18,16 @@ class Card(Sprite):
         self.flipped = False
 
     def set_fields(self, question: str, answer: str):
-        """Set question & answer fields"""
+        """Set question & answer fields, used in addition to __init__ for instantiating a flashcard
+        :param question text of the card
+        :param answer text for the card"""
         self.question, self.answer = question, answer
         return self
 
     def set_pos(self, x: int, y: int):
+        """Set the card's position
+        :param x new x-position
+        :param y new y-position"""
         self.x, self.y = x, y
 
     def set_imgs(self, front: str, back: str):
@@ -48,8 +55,8 @@ class Card(Sprite):
 
     def render_textwrap(self, surface: Surface, color: (int, int, int) = None,
                         font: SysFont = None, padding_left: int = 40, rect: Rect = None, aa=True):
-        """Function adopted from the pygame wiki
-           Renders text while wrapping anything that goes over the given rect
+        """Renders text on a card while wrapping anything that goes over its rect boundaries
+           Function adapted from https://www.pygame.org/wiki/TextWrap
            :param surface which screen to draw text on
            :param color text color
            :param font text font
@@ -126,6 +133,6 @@ class Card(Sprite):
         self.refresh_img()
 
     def update(self) -> None:
-        """Override pygame's default sprite update()"""
+        """Override pygame's default sprite update() to set the card's rect (actual) position to the correct values"""
         self.rect.x, self.rect.y = self.x, self.y
 

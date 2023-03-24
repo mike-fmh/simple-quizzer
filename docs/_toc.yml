@@ -6,4 +6,3 @@ root: index
 chapters:
 - file: github
 - file: releases
-- file: doc
