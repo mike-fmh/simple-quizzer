@@ -9,3 +9,7 @@
    - add 10 default questions and answers
    - implement textwrap and dynamic text centering for flashcards
    - add top-left text to keep track of current flashcard number
+- 0.4:
+  - add up/down arrow keys as alternatives to mouse press for flipping flashcards
+  - reword default questions #2 and #10
+  - add more docstrings and comments
