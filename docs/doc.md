@@ -2,8 +2,6 @@
 
 FlashQuiz is a study tool Python package for practicing flashcards
 
-Quizzing yourself on flashcards is not supported yet as of v0.01, but it is planned to be added in the future.
-
 ## Installation
 
 > pip install flashquiz
@@ -28,3 +26,21 @@ Open the terminal and run
 | `--w`           | Sets the window width                                         | 700                             |
 | `--title`       | Changes the window title                                      | FlashQuiz                       |
 | `--fps`         | Set the fps for the window to run at                          | 30                              |
+
+
+## Usage
+
+Although FlashQuiz contains 10 default flashcards to show its functionality, this package is designed to help you study your own flashcards.
+
+In order to study your own questions and answers, simply create a .csv file formatted:
+
+| Questions   | Answers |
+|-------------|---------|
+| What's 1+1? | 2       |
+| ...         | ...     |
+
+Lets say for example you named this file `math.csv`
+
+To use FlashQuiz with this custom .csv document, `cd` into the directory containing `math.csv` and run
+
+`flashquiz --file math.csv`
