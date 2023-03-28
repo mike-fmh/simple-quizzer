@@ -4,14 +4,14 @@ FlashQuiz is a study tool Python package for practicing flashcards
 
 ## Installation
 
-> pip install flashquiz
+`pip install flashquiz`
 
 
 ## Running
 
 Open the terminal and run
 
-> flashquiz --arg ARG
+ `flashquiz --arg ARG`
 
 
 ## Args
@@ -39,7 +39,7 @@ In order to study your own questions and answers, simply create a .csv file form
 | What's 1+1? | 2       |
 | ...         | ...     |
 
-Lets say for example you named this file `math.csv`
+Let's say for example you named this file `math.csv`
 
 To use FlashQuiz with this custom .csv document, `cd` into the directory containing `math.csv` and run
 
