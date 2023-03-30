@@ -7,4 +7,4 @@ What argument can you use with the "ls" command to view hidden files?,-a
 What causes a "merge conflict" between two git branches?,The same lines of the same file are edited differently on each branch
 What is the most important value of Unix Philosophy?,All programs should be designed to work together
 What is the purpose of the .gitignore file?,Git won't track any files or directories that match the pattern of a line in this file
-What is a git hash?,A unique identifier for each commit in a repository
+What is a git hash?,A unique identifier for each git object in a repository
