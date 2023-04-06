@@ -1,6 +1,6 @@
 [project]
 name = "flashquiz"
-version = "0.4"
+version = "0.5"
 authors = [
   { name="Michael MH", email="mikemh@uri.edu" },
 ]

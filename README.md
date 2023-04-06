@@ -5,6 +5,13 @@
 
 After installation is finished you can run the program by using the `flashquiz` command
 
+## Usage
+
+With the FlashQuiz window in focus, you can interact with the loaded flashcards with the mouse & keyboard:
+
+- Left & Right arrows move to the previous/next flashcard correspondingly
+- Up & Down arrows, as well as clicking the mouse, will flip the current flashcard over
+R
 ## Optional Arguments
 
 `flashquiz --arg ARG`

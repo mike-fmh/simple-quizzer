@@ -13,3 +13,5 @@
   - add up/down arrow keys as alternatives to mouse press for flipping flashcards
   - reword default questions #2 and #10
   - add more docstrings and comments
+- 0.5:
+  - questions 1, 5, 9 and 10 of the default question set are now more accurate
