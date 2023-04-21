@@ -39,8 +39,8 @@ In order to study your own questions and answers, simply create a .csv file form
 | What's 1+1? | 2       |
 | ...         | ...     |
 
-Let's say for example you named this file `math.csv`
+Let's say for example you named this file `math_questions.csv`
 
-To use FlashQuiz with this custom .csv document, `cd` into the directory containing `math.csv` and run
+To use FlashQuiz with this custom .csv document, `cd` into the directory containing `math_questions.csv` and run
 
-`flashquiz --file math.csv`
+`flashquiz --file math_questions.csv`
